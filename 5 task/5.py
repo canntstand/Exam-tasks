@@ -9,6 +9,7 @@ def f(n):
         n2 = "11" + n2[2:]
     return int(n2, 2)
 
+
 for n in range(1, 1000):
     r = f(n)
     if r <= 19:

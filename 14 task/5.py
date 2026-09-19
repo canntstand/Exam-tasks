@@ -8,6 +8,7 @@ def to_12(n):
 
     return n12[::-1]
 
+
 cnt = 0
 
 for x in range(1, 3501):

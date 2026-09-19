@@ -7,12 +7,13 @@ def f(n):
     else:
         bn += "01"
         bn = "10" + bn[2:]
-    
+
     return int(bn, 2)
+
 
 for n in range(1, 1000):
     r = f(n)
-    
+
     if r > 96:
         print(n)
         break

@@ -4,7 +4,7 @@ for x in range(0, 22):
     n2 = f"26{nums[x]}51"
     n3 = f"711{nums[x]}5"
     eq = int(n1, 22) + int(n2, 22) + int(n3, 22)
-    
+
     if eq % 21 == 0:
         print(eq // 21)
         break

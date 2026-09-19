@@ -1,12 +1,13 @@
 def to_12(n):
     n12 = ""
     nums = "0123456789AB"
-    
+
     while n > 0:
         n12 += nums[n % 12]
         n = n // 12
-    
+
     return n12[::-1]
+
 
 def f(n):
     nums = "0123456789AB"
@@ -17,6 +18,7 @@ def f(n):
         nl = [nums.index(i) for i in n12]
         n12 += nums[max(nl)]
     return int(n12, 12)
+
 
 ans = []
 
