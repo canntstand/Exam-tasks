@@ -1,0 +1,16 @@
+def f(s, e):
+    if s == e:
+        return 1
+    if s > e:
+        return 0
+
+    st = str(s)
+
+    if st[1] < st[2]:
+        st = int(st[0] + st[2] + st[1])
+        return f(s + 1, e) + f(st, e)
+    
+    return f(int(s) + 1, e)
+
+
+print(f(100, 150))
